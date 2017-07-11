@@ -92,33 +92,54 @@
 </div>
 
 <div class="container text-center">
-  <h3>MOST POPULAR</h3>
+  <h3>TOP CATEGORIES</h3>
 
   <div class="row">
     <div class="col-sm-4">
-      <p class="text-center"><strong>Sports</strong></p><br>
+      <p class="text-center"><strong>MUSIC</strong></p><br>
       <a href="" data-toggle="collapse">
         <img src="img/home-2.jpg" class="img-circle event" alt="Sports Events" width="255" height="255">
       </a>
     </div>
     <div class="col-sm-4">
-      <p class="text-center"><strong>Food & Drink</strong></p><br>
+      <p class="text-center"><strong>ART</strong></p><br>
       <a href="" data-toggle="collapse">
         <img src="img/home-2.jpg" class="img-circle event" alt="Food & Drinks Evnts" width="255" height="255">
       </a>
     </div>
     <div class="col-sm-4">
-      <p class="text-center"><strong>Art</strong></p><br>
+      <p class="text-center"><strong>THEATRE</strong></p><br>
       <a href="#demo3" data-toggle="collapse">
         <img src="img/home-2.jpg" class="img-circle event" alt="Art Events" width="255" height="255">
       </a>
     </div>
   </div>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <p class="text-center"><strong>DANCE</strong></p><br>
+        <a href="" data-toggle="collapse">
+          <img src="img/home-2.jpg" class="img-circle event" alt="Sports Events" width="255" height="255">
+        </a>
+      </div>
+      <div class="col-sm-4">
+        <p class="text-center"><strong>FOOD & DRINK</strong></p><br>
+        <a href="" data-toggle="collapse">
+          <img src="img/home-2.jpg" class="img-circle event" alt="Food & Drinks Evnts" width="255" height="255">
+        </a>
+      </div>
+      <div class="col-sm-4">
+        <p class="text-center"><strong>BUSINESS</strong></p><br>
+        <a href="#demo3" data-toggle="collapse">
+          <img src="img/home-2.jpg" class="img-circle event" alt="Art Events" width="255" height="255">
+        </a>
+      </div>
+    </div>
 </div>
 
 <div class="bg-1">
   <div class="container">
-    <h3 class="text-center">TOP CATEGORIES</h3>
+    <h3 class="text-center">MOST POPULAR</h3>
     <!-- <ul class="list-group">
       <li class="list-group-item">September <span class="label label-danger">Sold Out!</span></li>
       <li class="list-group-item">October <span class="label label-danger">Sold Out!</span></li>
@@ -129,42 +150,42 @@
       <div class="col-sm-4">
         <div class="thumbnail">
           <img src="img/home-2.jpg" alt="Sports" width="400" height="300">
-          <p><strong>Sports</strong></p>
+          <p><strong>EVENT 1</strong></p>
           <button class="btn" data-toggle="modal" data-target="#myModal">More</button>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="thumbnail">
           <img src="img/home-2.jpg" alt="Art" width="400" height="300">
-          <p><strong>Art</strong></p>
+          <p><strong>EVENT 1</strong></p>
           <button class="btn" data-toggle="modal" data-target="#myModal">More</button>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="thumbnail">
           <img src="img/home-2.jpg" alt="Music" width="400" height="300">
-          <p><strong>Music</strong></p>
+          <p><strong>EVENT 1</strong></p>
           <button class="btn" data-toggle="modal" data-target="#myModal">More</button>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="thumbnail">
           <img src="img/home-2.jpg" alt="Dance" width="400" height="300">
-          <p><strong>Dance</strong></p>
+          <p><strong>EVENT 1</strong></p>
           <button class="btn" data-toggle="modal" data-target="#myModal">More</button>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="thumbnail">
           <img src="img/home-2.jpg" alt="Theatre" width="400" height="300">
-          <p><strong>Theatre</strong></p>
+          <p><strong>EVENT 1</strong></p>
           <button class="btn" data-toggle="modal" data-target="#myModal">More</button>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="thumbnail">
           <img src="img/home-2.jpg" alt="Food & Drinks" width="400" height="300">
-          <p><strong>San Francisco</strong></p>
+          <p><strong>EVENT 1</strong></p>
           <button class="btn" data-toggle="modal" data-target="#myModal">More</button>
         </div>
       </div>
@@ -174,7 +195,6 @@
   <!-- Modal -->
   <!-- <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
-
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">×</button>
@@ -237,25 +257,19 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 $(document).ready(function(){
   // Initialize Tooltip
   $('[data-toggle="tooltip"]').tooltip();
-
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
-
       // Prevent default anchor click behavior
       event.preventDefault();
-
       // Store hash
       var hash = this.hash;
-
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 900, function(){
-
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
