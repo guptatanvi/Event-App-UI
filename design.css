@@ -1,6 +1,7 @@
 
   body {
-      font: 400 15px/1.8 Lato, sans-serif;
+      /*font: 400 15px/1.8 Lato, sans-serif;*/
+      font-family: Helvetica, Roboto, sans-serif;
       color: #777;
   }
   h3, h4 {
@@ -9,14 +10,23 @@
       font-size: 20px;
       color: #111;
   }
- .app{
+  .ht-logo{
+    margin-top: 10px;
+    margin-left: 10px;
+
+  }
+.ht-logo:hover{
+      box-shadow: 0 8px 16px 0 rgba(253,253,255,0.2);
+      opacity: 0.95;
+
+}
+ .logo{
    text-decoration: none !important;
    color: #fff;
    margin-top: 10px;
    margin-left: 20px;
-
  }
- .app:hover{
+ .logo:hover{
      font-size: 40px;
      transition: .2s ease-out;
      color: #fff;
@@ -25,16 +35,6 @@
   .container {
       padding: 80px 120px;
   }
- .logo{
-   font-size: 40px;
-      color: #fff;
-}
-  .logo-blue{
-    color: #4aa3d6;
-  }
-.logo:hover{
-
-}
 
   .event {
       border: 10px solid transparent;
@@ -52,7 +52,7 @@
   }
   .carousel-inner img {
       /*-webkit-filter: grayscale(90%);*/
-      width: 100%; /* Set width to 100% */
+      width: 100%;
       margin: auto;
   }
   .carousel-caption h3 {
@@ -107,18 +107,19 @@
       filter: grayscale(100%);
   }*/
   .navbar {
-      font-family: Montserrat, sans-serif;
+      font-family: Helvetica, Montserrat, sans-serif;
       margin-bottom: 0;
       background-color: #2d2d30;
       border: 0;
-      font-size: 14px !important;
-      letter-spacing: 4px;
+      font-size: 15px !important;
+      letter-spacing: 2px;
       opacity: 0.9;
 
   }
   .navbar li a, .navbar {
     margin-top: 0;
       color: #d5d5d5 !important;
+      font-weight: 400;
   }
   .navbar-nav li a:hover {
       color: #fff !important;
@@ -158,6 +159,19 @@
       padding: 20px;
   }
 
+.up-arrow{
+  color: #fff;
+  border-radius: 50%;
+  border: 40px !important;
+  opacity: 0.9;
+}
+.up-arrow:hover{
+  background: #3a3c3f;
+  color: #fff;
+  opacity: 1;
+  text-decoration: none;
+}
+
   .fa {
     padding: 10px;
     font-size: 20px !important;
@@ -181,13 +195,13 @@
   }
 
 
-  .form-control {
+  /*.form-control {
       border-radius: 0;
-  }
+  }*/
 
-  textarea {
+  /*textarea {
       resize: none;
-  }
+  }*/
 
   @media (max-width: 600px) {
     .carousel-caption {
