@@ -3,12 +3,12 @@
       font: 400 15px/1.8 Lato,Helvetica, sans-serif;
       color: #777;
   }
-  /*h3, h4 {
+  h3, h4 {
       margin: 10px 0 30px 0;
       letter-spacing: 10px;
       font-size: 20px;
       color: #111;
-  }*/
+  }
   .ht-logo{
     margin-top: 10px;
     margin-left: 10px;
@@ -210,7 +210,3 @@
     .carousel-caption {
       display: none;
   }
-
-.modal-header h3{
-  text-align: center;
-}
