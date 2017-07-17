@@ -19,19 +19,40 @@
   <a href="http://www.hindustantimes.com">
     <img class="ht-logo" src="http://www.hindustantimes.com/images/app-images/ht/sm-logo-cm.png" height="45" width="45">
   </a>
-  <a class="logo"  href="home.html"><strong><h1>events</strong></a></h1>
-  <span class="collapse navbar-collapse">
+  <a class="logo" href="home.html">events</a>
+
       <ul class="nav navbar-nav navbar-right">
-        <li><a href=""><span class="glyphicon glyphicon-search"></span></a></li>
-        <li><a href="list.html">BROWSE EVENTS</a></li>
-        <li><a href="#signin" data-target="#signin" data-toggle="modal">LOG IN</a></li>
-        <li><a href="#signup" data-target="#signup" data-toggle="modal">SIGN UP</a></li>
+        <li class="nav-item dropdown">
+       <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         <span class="glyphicon glyphicon-search"></span>
+       </a>
+       <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+             <li><a href="#"><form action="" class="search-form">
+                          <div class="form-group has-feedback">
+                          <label for="search" class="sr-only">Search</label>
+                          <input type="text" class="form-control" name="search" id="search" placeholder="Search"></input>
+                            <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                        </div>
+                      </form></a></li>
+             <!-- <li class="divider"></li> -->
+             <li><a href="list.html" style="color:black !important;">Search All</a></li>
+           </ul>
+
+     </li>
+        <li><a href="list.html" class="header-links-active">BROWSE EVENTS</a></li>
+
+        <li><a href="#signin" data-target="#signin" data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span> LOG IN</a></li>
+        <li><a href="#signup" data-target="#signup" data-toggle="modal"><span class="glyphicon glyphicon-user"></span> SIGN UP</a></li>
         <li><a href="create.html">CREATE EVENT</a></li>
         <li><a href="http://www.hindustantimes.com/contact-us">CONTACT US </a></li>
       </ul>
   </span>
 </nav>
-</div>
+
+
+
+
+
 
 <footer class="text-center">
   <a class="up-arrow" href="#top" data-toggle="tooltip" title="TO TOP">
@@ -42,7 +63,7 @@
     Follow Us:
     <a href="https://www.facebook.com/hindustantimes" class="fa fa-facebook"></a>
     <a href="https://twitter.com/htTweets" class="fa fa-twitter"></a>
-    <a href="https://plus.google.com/+hindustantimes/posts" class="fa fa-google"></a>
+    <a href="https://plus.google.com/+hindustantimes/posts" class="fa fa-google-plus"></a>
     <a href="https://www.instagram.com/hindustantimes/" class="fa fa-instagram"></a>
     <a href="https://www.linkedin.com/company/hindustantimes" class="fa fa-linkedin"></a>
     <a href="https://www.youtube.com/user/ht" class="fa fa-youtube"></a>
@@ -56,5 +77,90 @@
   <a href="http://www.shine.com/"> Jobs</a>
 </div>
 </footer>
+
+<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h3 class="modal-title" id="modalLabel"><strong><center>Sign Up</center></strong></h3>
+        <p>Already have an account?
+          <button type="button" class="btn btn-default" id="signin-trigger"> Sign In</button></p>
+        <!-- <p>Already have an account? <a href="#signin" data-target="#signin" data-toggle="modal" id="signin-trigger">Log In</a></p> -->
+      </div>
+      <div class="modal-body">
+        <form method="POST" commandName="user" action="${pageContext.request.contextPath}/user/add">
+          <div class="form-group">
+            <label for="name" class="form-control-label">Name:</label>
+            <input type="text" class="form-control" name="name" id="name">
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-control-label">Email:</label>
+            <input type="text" class="form-control" name="email" id="email"></input>
+          </div>
+          <div class="form-group">
+            <label for="pw" class="form-control-label">Password:</label>
+            <input type="password" class="form-control" name="pw" id="pw"></input>
+          </div>
+        </form>
+        <div class="form-group">
+          <label for="phone" class="form-control-label">Phone#:</label>
+          <input type="text" class="form-control" name="phone" id="phone"></input>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <input type="submit" class="btn btn-primary" value="Sign Up"></input>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <p>By signing up, I agree to terms of service & privacy policy.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h3 class="modal-title" id="modalLabel"><strong><center>Sign In</center></strong></h3>
+        <p>Not a member?
+          <button type="button" class="btn btn-default" id="signup-trigger">Sign Up</button>
+        <!-- <p>New User? <a href="#signup" data-target="#signup" data-toggle="modal" id="signup-trigger">Sign Up</a></p> -->
+      </div>
+      <div class="modal-body">
+        <form method="POST" commandName="user" action="">
+          <div class="form-group">
+            <label for="email" class="form-control-label">Email:</label>
+            <input type="text" class="form-control" name="email" id="email"></input>
+          </div>
+          <div class="form-group">
+            <label for="pw" class="form-control-label">Password:</label>
+            <input type="password" class="form-control" name="pw" id="pw"></input>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <input type="submit" class="btn btn-primary" value="Sign In"></input>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+$("#signup-trigger").click(function(){
+  $('#signin').modal('hide');
+  $('#signup').modal('show');
+});
+
+$("#signin-trigger").click(function(){
+  $('#signup').modal('hide');
+  $('#signin').modal('show');
+});
+
+</script>
 </body>
 </html>

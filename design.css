@@ -12,25 +12,23 @@
   .header-links-active{
       border-bottom: 3px solid;
   }
-  /*.ht-logo{
-    margin-top: 10px;
-    margin-left: 10px;
+  .ht-logo{
+    /*margin-top: 10px;*/
+    margin-bottom: 10px;
 
-  }*/
+  }
 .ht-logo:hover{
       box-shadow: 0 8px 16px 0 rgba(253,253,255,0.2);
       opacity: 0.95;
 
 }
-.dropdown{
-  z-index: 100;
-}
+/*on hover transform xy 1.05 1.05*/
  .logo{
    text-decoration: none !important;
    color: #fff;
    font-size: 36px;
    /*margin-top: 10px;*/
-   /*margin-left: 60px;*/
+   margin-left: 20px;
    /*display: inline;*/
    /*position: absolute;*/
  }
@@ -53,8 +51,10 @@
   }
   .event:hover {
       border-color: #f1f1f1;
-      width: 85%;
-      height: 85%;
+      /*width: 85%;
+      height: 85%;*/
+      transform: scale(1.05,1.05);
+
       opacity: 1;
       transition: .2s ease-out;
   }
@@ -100,12 +100,13 @@
   }
   .navbar {
       font-family: Lato, Helvetica, Montserrat, sans-serif;
-      margin-bottom: 0;
+      margin-bottom: 5;
       background-color: #2d2d30;
       border: 0;
       font-size: 15px !important;
       letter-spacing: 2px;
       opacity: 0.9;
+      width: 100%;
 
   }
   .navbar li a, .navbar {
@@ -256,9 +257,4 @@
   border-radius: 10px;
   border: solid black 1px;
   margin: auto;
-}
-
-
-.navbar a{
-  display: inline;
 }
