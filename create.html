@@ -12,7 +12,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body id="top" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="50" class="blue-bg">
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <a href="http://www.hindustantimes.com">
@@ -33,7 +33,7 @@
                             <span class="glyphicon glyphicon-search form-control-feedback"></span>
                         </div>
                       </form></a></li>
-             <!-- <li class="divider"></li> -->
+             <li class="divider"></li>
              <li><a href="list.html" style="color:black !important;">Search All</a></li>
            </ul>
      </li>
@@ -44,9 +44,9 @@
          <span class="glyphicon glyphicon-user"></span>USER
        </a>
        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-             <li><a href=""></a>gfbgfbg</li>
-             <!-- <li class="divider"></li> -->
-             <li><a href="">gfbhg</a></li>
+             <li><a href="" style="color:black !important;"><span class="fa fa-cog"></span>Account Settings</a></li>
+             <li class="divider"></li>
+             <li><a href=""  style="color:black !important;">Log Out</a></li>
            </ul>
      </li>
 
@@ -55,11 +55,10 @@
       </ul>
   </span>
 </nav>
-
-
 </div>
 
-<div class="create container">
+<div class="create">
+<!-- <div class="container"> -->
 <form method="POST" commandName="event" action="${pageContext.request.contextPath}/event/form" enctype="multipart/form-data" class="form-horizontal">
 <errors path="*" cssClass="errorblock" element="div" />
 
@@ -97,23 +96,23 @@
             <input type="text" path="pincode" class="form-control" id="pincode" placeholder="Enter pin code"/>
         </div>
     </div>
-
+<!--
     <div class="form-group">
-        <label class="control-label col-sm-2" for="day">Day:</label>
+        <label class="control-label col-sm-2" for="day">Day  <span class="fa fa-rupee"></span></label>
         <div class="col-sm-10">
             <input type="text" path="day" class="form-control" id="day" placeholder="Enter day of the event"/>
         </div>
-    </div>
+    </div> -->
 
     <div class="form-group">
-        <label class="control-label col-sm-2" for="date">Date:</label>
+        <label class="control-label col-sm-2" for="date">Date  <span class="fa fa-calendar"></span></label>
         <div class="col-sm-10">
             <input type="date" path="date" class="form-control" id="date" placeholder="Enter date of the event"/>
         </div>
     </div>
 
     <div class="form-group">
-        <label class="control-label col-sm-2" for="time">Time:</label>
+        <label class="control-label col-sm-2" for="time">Time <span class="fa fa-clock-o "></span></label>
         <div class="col-sm-10">
             <input type="time" path="time" class="form-control" id="time"/>
         </div>
@@ -129,7 +128,14 @@
     <div class="form-group">
         <label class="control-label col-sm-2">Category:</label>
         <div class="col-sm-10">
-        <span class="help-block">
+     <select class="form-control selectpicker">
+       <option>1</option>
+       <option>2</option>
+       <option>3</option>
+       <option>4</option>
+     </select>
+     
+    <span class="help-block">
             Select 1 or more categories the event may belong to.
         </span>
         </div>
@@ -140,20 +146,20 @@
         <div class="col-sm-10">
             <textarea path="description" id="description" rows="3" class="form-control"></textarea>
             <span class="help-block">
-            Description of the event in 50 words.
+            Description of the event.
         </span>
         </div>
     </div>
 
     <div class="form-group">
-        <label class="control-label col-sm-2" for="fees">Registration Fee:</label>
+        <label class="control-label col-sm-2" for="fees">Registration Fee <span class="fa fa-rupee"></span></label>
         <div class="col-sm-10">
             <input type="text" path="fees" class="form-control" id="fees" placeholder="0.0"/>
         </div>
     </div>
 
     <div class="form-group">
-        <label class="control-label col-sm-2" for="image">Upload Image:</label>
+        <label class="control-label col-sm-2" for="image">Upload Image <span class="fa fa-file-photo-o"></span></label>
         <div class="col-sm-10">
             <form action="upload" method="post" enctype="multipart/form-data" class="form-control">
                 <input type="file" name="file" id="image" placeholder="Select file to upload:"/><br>
@@ -170,29 +176,33 @@
 
 </form>
 </div>
+<!-- </div> -->
 </div>
+
 
 <footer class="text-center">
   <a class="up-arrow" href="#top" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br><br>
+
   <div class="follow">
     Follow Us:
-    <a href="https://www.facebook.com/hindustantimes" class="fa fa-facebook"></a>
-    <a href="https://twitter.com/htTweets" class="fa fa-twitter"></a>
-    <a href="https://plus.google.com/+hindustantimes/posts" class="fa fa-google"></a>
-    <a href="https://www.instagram.com/hindustantimes/" class="fa fa-instagram"></a>
-    <a href="https://www.linkedin.com/company/hindustantimes" class="fa fa-linkedin"></a>
-    <a href="https://www.youtube.com/user/ht" class="fa fa-youtube"></a>
+    <a href="https://www.facebook.com/hindustantimes" class="fa fa-facebook expand"></a>
+    <a href="https://twitter.com/htTweets" class="fa fa-twitter expand"></a>
+    <a href="https://plus.google.com/+hindustantimes/posts" class="fa fa-google-plus expand"></a>
+    <a href="https://www.instagram.com/hindustantimes/" class="fa fa-instagram expand"></a>
+    <a href="https://www.linkedin.com/company/hindustantimes" class="fa fa-linkedin expand"></a>
+    <a href="https://www.youtube.com/user/ht" class="fa fa-youtube expand"></a>
 </div><br>
-<p>Copyright &copy 2017. HT Media Limited. All rights reserved.</p>
-<div class="footer-links">
+<p>
+Copyright &copy 2017. HT Media Limited. All rights reserved.
+<span class="footer-links">
   <a href="http://www.htmedia.in/Sectionb14c.html?Page=Page-HTMedia-AboutUs">About Us</a>
   <a href="http://www.hindustantimes.com/contact-us"> Contact Us</a>
   <a href="http://www.hindustantimes.com/privacy-policy"> Privacy Policy</a>
   <a href="http://www.hindustantimes.com/disclaimer"> Disclaimer</a>
   <a href="http://www.shine.com/"> Jobs</a>
-</div>
+</span></p>
 </footer>
 
 </body>

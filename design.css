@@ -3,7 +3,7 @@
       font: 400 15px/1.8 Lato,Helvetica, sans-serif;
       color: #777;
   }
-  h3, h4 {
+  .carousel-caption h3 {
       margin: 10px 0 30px 0;
       letter-spacing: 10px;
       font-size: 20px;
@@ -22,22 +22,22 @@
       opacity: 0.95;
 
 }
-/*on hover transform xy 1.05 1.05*/
  .logo{
    text-decoration: none !important;
    color: #fff;
    font-size: 36px;
-   /*margin-top: 10px;*/
    margin-left: 20px;
-   /*display: inline;*/
-   /*position: absolute;*/
  }
  .logo:hover{
      font-size: 40px;
      transition: .2s ease-out;
      color: #fff;
  }
-
+ .modal-title{
+   color: black;
+   text-align: center;
+   padding-bottom: 20px;
+ }
   .container {
       padding: 80px 120px;
   }
@@ -51,8 +51,6 @@
   }
   .event:hover {
       border-color: #f1f1f1;
-      /*width: 85%;
-      height: 85%;*/
       transform: scale(1.05,1.05);
 
       opacity: 1;
@@ -101,6 +99,7 @@
   .navbar {
       font-family: Lato, Helvetica, Montserrat, sans-serif;
       margin-bottom: 5;
+      padding-right: 10px;
       background-color: #2d2d30;
       border: 0;
       font-size: 15px !important;
@@ -129,7 +128,7 @@
   color: #fff;
   text-decoration: none;
   opacity: 0.9;
-  text-align: right;
+  float: right;
 }
 .footer-links:hover{
   opacity: 1;
@@ -158,6 +157,19 @@
     text-align: left;
   }
 
+  .create{
+    margin-top: 150px;
+    margin-bottom: 100px;
+    width: 900px;
+    border-radius: 10px;
+    border: solid black 1px;
+    margin: auto;
+    background: #fff;
+    padding: 20px 20px 20px 20px;
+  }
+  .blue-bg{
+    background: #dbf5fc;
+  }
 .up-arrow{
   color: #fff;
   border-radius: 50%;
@@ -171,7 +183,7 @@
   text-decoration: none;
 }
 
-  .fa {
+  .expand {
     padding: 10px;
     font-size: 20px !important;
     width: 40px;
@@ -184,10 +196,11 @@
     color: #fff;
   }
 
-  .fa:hover{
+  .expand:hover{
     opacity: 1;
     text-decoration: none;
-    font-size: 25px !important;
+    /*font-size: 25px !important;*/
+    transform: scale(1.05,1.05);
     width: 50px;
     transition: .2s ease-out;
     color: #fff;
@@ -248,13 +261,3 @@
           padding-bottom: 20px;
       }
   }
-
-
-.create{
-  margin-top: 150px;
-  margin-bottom: 100px;
-  width: 800px;
-  border-radius: 10px;
-  border: solid black 1px;
-  margin: auto;
-}

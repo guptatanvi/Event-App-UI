@@ -20,17 +20,6 @@
     <img class="ht-logo" src="http://www.hindustantimes.com/images/app-images/ht/sm-logo-cm.png" height="45" width="45">
   </a>
   <a class="logo" href="home.html">events</a>
-    <!-- <a href=""><span class="glyphicon glyphicon-search"></span></a> -->
-    <!-- <span class="col-md-3 col-md-offset-3">
-        <form action="" class="search-form">
-            <div class="form-group has-feedback">
-            <label for="search" class="sr-only">Search</label>
-            <input type="text" class="form-control" name="search" id="search" placeholder="search"></input>
-              <span class="glyphicon glyphicon-search form-control-feedback"></span>
-          </div>
-        </form>
-    </span> -->
-
 
       <ul class="nav navbar-nav navbar-right">
         <li class="nav-item dropdown">
@@ -45,7 +34,7 @@
                             <span class="glyphicon glyphicon-search form-control-feedback"></span>
                         </div>
                       </form></a></li>
-             <!-- <li class="divider"></li> -->
+             <li class="divider"></li>
              <li><a href="list.html" style="color:black !important;">Search All</a></li>
            </ul>
 
@@ -55,14 +44,14 @@
         <li><a href="#signin" data-target="#signin" data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span> LOG IN</a></li>
         <li><a href="#signup" data-target="#signup" data-toggle="modal"><span class="glyphicon glyphicon-user"></span> SIGN UP</a></li>
         <li><a href="create.html">CREATE EVENT</a></li>
-        <li><a href="http://www.hindustantimes.com/contact-us">CONTACT US </a></li>
+        <li><a href="http://www.hindustantimes.com/contact-us">CONTACT US</a></li>
       </ul>
   </span>
 </nav>
 
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicatsors -->
+    <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -220,21 +209,22 @@
 
   <div class="follow">
     Follow Us:
-    <a href="https://www.facebook.com/hindustantimes" class="fa fa-facebook"></a>
-    <a href="https://twitter.com/htTweets" class="fa fa-twitter"></a>
-    <a href="https://plus.google.com/+hindustantimes/posts" class="fa fa-google-plus"></a>
-    <a href="https://www.instagram.com/hindustantimes/" class="fa fa-instagram"></a>
-    <a href="https://www.linkedin.com/company/hindustantimes" class="fa fa-linkedin"></a>
-    <a href="https://www.youtube.com/user/ht" class="fa fa-youtube"></a>
+    <a href="https://www.facebook.com/hindustantimes" class="fa fa-facebook expand"></a>
+    <a href="https://twitter.com/htTweets" class="fa fa-twitter expand"></a>
+    <a href="https://plus.google.com/+hindustantimes/posts" class="fa fa-google-plus expand"></a>
+    <a href="https://www.instagram.com/hindustantimes/" class="fa fa-instagram expand"></a>
+    <a href="https://www.linkedin.com/company/hindustantimes" class="fa fa-linkedin expand"></a>
+    <a href="https://www.youtube.com/user/ht" class="fa fa-youtube expand"></a>
 </div><br>
-<p>Copyright &copy 2017. HT Media Limited. All rights reserved.</p>
-<div class="footer-links">
+<p>
+Copyright &copy 2017. HT Media Limited. All rights reserved.
+<span class="footer-links">
   <a href="http://www.htmedia.in/Sectionb14c.html?Page=Page-HTMedia-AboutUs">About Us</a>
   <a href="http://www.hindustantimes.com/contact-us"> Contact Us</a>
   <a href="http://www.hindustantimes.com/privacy-policy"> Privacy Policy</a>
   <a href="http://www.hindustantimes.com/disclaimer"> Disclaimer</a>
   <a href="http://www.shine.com/"> Jobs</a>
-</div>
+</span></p>
 </footer>
 
 <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
@@ -244,7 +234,7 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-        <h3 class="modal-title" id="modalLabel"><strong><center>Sign Up</center></strong></h3>
+        <h3 class="modal-title" id="modalLabel">Sign Up</h3>
         <p>Already have an account?
           <button type="button" class="btn btn-default" id="signin-trigger"> Sign In</button></p>
         <!-- <p>Already have an account? <a href="#signin" data-target="#signin" data-toggle="modal" id="signin-trigger">Log In</a></p> -->
@@ -252,20 +242,20 @@
       <div class="modal-body">
         <form method="POST" commandName="user" action="${pageContext.request.contextPath}/user/add">
           <div class="form-group">
-            <label for="name" class="form-control-label">Name:</label>
+            <label for="name" class="form-control-label">Name <span class="fa fa-user-o"></span></label>
             <input type="text" class="form-control" name="name" id="name">
           </div>
           <div class="form-group">
-            <label for="email" class="form-control-label">Email:</label>
+            <label for="email" class="form-control-label">Email <span class="fa fa-envelope-o"></span></label>
             <input type="text" class="form-control" name="email" id="email"></input>
           </div>
           <div class="form-group">
-            <label for="pw" class="form-control-label">Password:</label>
+            <label for="pw" class="form-control-label">Password <span class="glyphicon glyphicon-lock"></span></label>
             <input type="password" class="form-control" name="pw" id="pw"></input>
           </div>
         </form>
         <div class="form-group">
-          <label for="phone" class="form-control-label">Phone#:</label>
+          <label for="phone" class="form-control-label">Phone <span class="fa fa-phone"></span></label>
           <input type="text" class="form-control" name="phone" id="phone"></input>
         </div>
       </div>
@@ -285,7 +275,7 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-        <h3 class="modal-title" id="modalLabel"><strong><center>Sign In</center></strong></h3>
+        <h3 class="modal-title" id="modalLabel">Sign In</h3>
         <p>Not a member?
           <button type="button" class="btn btn-default" id="signup-trigger">Sign Up</button>
         <!-- <p>New User? <a href="#signup" data-target="#signup" data-toggle="modal" id="signup-trigger">Sign Up</a></p> -->
@@ -293,11 +283,11 @@
       <div class="modal-body">
         <form method="POST" commandName="user" action="">
           <div class="form-group">
-            <label for="email" class="form-control-label">Email:</label>
+            <label for="email" class="form-control-label">Email <span class="fa fa-envelope-o"></span></label>
             <input type="text" class="form-control" name="email" id="email"></input>
           </div>
           <div class="form-group">
-            <label for="pw" class="form-control-label">Password:</label>
+            <label for="pw" class="form-control-label">Password <span class="glyphicon glyphicon-lock"></span></label>
             <input type="password" class="form-control" name="pw" id="pw"></input>
           </div>
         </form>
