@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
+  <script src="script.js"></script>
 </head>
 <body id="top" data-spy="scroll" data-target=".navbar" data-offset="50" class="blue-bg">
 
@@ -128,13 +131,17 @@
     <div class="form-group">
         <label class="control-label col-sm-2">Category:</label>
         <div class="col-sm-10">
-     <select class="form-control selectpicker">
-       <option>1</option>
-       <option>2</option>
-       <option>3</option>
-       <option>4</option>
+     <select id="category" name="category[]" multiple>
+     <option value="music">Music</option>
+     <option value="dance">Dance</option>
+     <option value="theatre">Theatre</option>
+     <option value="business">Business</option>
+     <option value="art">Art</option>
+     <option value="educational">Educational</option>
+     <option value="networking">Networking</option>
+     <option value="sports">Sports</option>
      </select>
-     
+
     <span class="help-block">
             Select 1 or more categories the event may belong to.
         </span>
