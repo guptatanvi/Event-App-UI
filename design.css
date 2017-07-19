@@ -5,9 +5,9 @@
   }
   .carousel-caption h3 {
       margin: 10px 0 30px 0;
-      letter-spacing: 10px;
+      letter-spacing: 4px;
       font-size: 20px;
-      color: #111;
+      color: #fff;
   }
   .header-links-active{
       border-bottom: 3px solid;
@@ -46,7 +46,7 @@
       margin-bottom: 25px;
       width: 80%;
       height: 80%;
-      opacity: 0.8;
+      opacity: 0.9;
   }
   .event:hover {
       border-color: #f1f1f1;
@@ -58,9 +58,12 @@
       width: 100%;
       margin: auto;
   }
-  .carousel-caption h3 {
+  /*.carousel-caption h3 {
       color: #fff;
-  }
+  }*/
+h3, .row p{
+  color: black;
+}
 
   .bg-1 {
       background: #2d2d30;
@@ -76,6 +79,7 @@
       padding: 0 0 15px 0;
       border: none;
       border-radius: 0;
+      border: solid black 1px;
   }
   .thumbnail p {
       margin-top: 15px;
@@ -234,24 +238,18 @@
     text-align: right;
   }
 
-.all-cat{
+.all{
   padding: 8px 15px;
   border-radius: 5px;
   background-color: white;
     color: black;
     border: 2px solid #555555;
 }
-.all-cat:hover{
+.all:hover{
   font-size: 16px;
     transition: .2s;
 }
-.all-events{
-  padding: 10px 20px;
-  border-radius: 0;
-  transition: .2s;
-  background-color: #e7e7e7;
-  color: black;
-}
+
 
   @media (max-width: 600px) {
     .carousel-caption {
