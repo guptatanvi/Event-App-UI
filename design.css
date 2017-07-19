@@ -194,7 +194,6 @@ margin-right: 4px;
   border: 40px !important;
   opacity: 0.9;
 }
-
 .submit{
   border-radius: 8px;
   color: #000;
@@ -272,8 +271,11 @@ margin-right: 4px;
         font-size:80%;
         line-height: 1;
       }
-      .navbar{
-          height: 94px;
+      .header-links a{
+          width: 50%;
+          text-align: right;
+          margin: auto;
+          margin-right: 0;
       }
       footer{
           left:0;
@@ -299,11 +301,13 @@ margin-right: 4px;
         margin: auto;
         opacity: 1;
       }
-      .footer-links , .copyright{
-        text-align: center;
-      }
-      .container{
+
+      .container , .create {
           width:75%;
+      }
+      .form-heading{
+        width:50%;
+        font-size: 26px;
       }
       .text-center{
         display: block;
