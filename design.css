@@ -131,14 +131,13 @@
   font-weight: 500;
   color: #fff;
   opacity: 0.9;
-margin-right: 4px;
+  margin-right: 4px;
 }
 .footer-links a:hover{
   opacity: 1;
   font-weight: 525;
   text-decoration: underline;
 }
-
   footer {
       padding: 32px;
       z-index: 0;
@@ -154,7 +153,6 @@ margin-right: 4px;
       background-color: #333;
       padding: 20px;
   }
-
   /*footer p{
     font-weight: 500;
     text-align: left;
@@ -263,6 +261,9 @@ margin-right: 4px;
     .event{
       opacity: 1;
     }
+      .container , .create {
+        width:75%;
+    }
   }
 
   @media only screen and (max-width: 768px){
@@ -309,8 +310,8 @@ margin-right: 4px;
         width:50%;
         font-size: 26px;
       }
-      .text-center{
+      /*.text-center{
         display: block;
         text-align: center;
-      }
+      }*/
   }
