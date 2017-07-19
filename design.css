@@ -285,13 +285,13 @@ h3, .row p{
           margin: auto;
       }
       .thumbnail{
-      width: 300%;
+      /*width: 300%;*/
       }
 
       .event{
           opacity: 1;
-          height: 300%;
-          width: 300%;
+          /*height: 300%;*/
+          /*width: 300%;*/
           margin: auto;
           /*text-align: center;*/
           padding: 0;
