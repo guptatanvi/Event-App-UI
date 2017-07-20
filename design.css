@@ -302,6 +302,9 @@ h3, .row p{
 
           /*transform: scale(4,4);*/
       }
+      .create {
+        width:75%;
+    }
       .container.text-center{
         padding-left: 40px !important;
         margin-left: 10px !important;
