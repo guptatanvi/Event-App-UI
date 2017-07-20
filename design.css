@@ -289,12 +289,10 @@ h3, .row p{
       /*width: 300%;*/
 
       }
-.row{
-  width: 400px;
-  align-items: center !important;
-
-
-}
+      .row{
+          width: 300px;
+          /*align-items: center;*/
+      }
       .event{
           opacity: 1;
           /*height: 300%;*/
