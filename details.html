@@ -58,10 +58,10 @@
          <p class="w3-center"><img src="img/home-1.jpg" style="margin-top:20px;height:300px;width:300px" alt="Avatar"></p>
          <hr>
 
-         <p class="d-head"><i class="w3-margin-right"></i>DATE AND TIME</p>
-           <p class="w3-margin-right"> Monday, 24 July 2017<br>
-          <i class="fa-fw w3-margin-right w3-text-theme"></i> 11:00 AM</p><br><br>
-          <p class="d-head"><i class="w3-margin-right"></i>LOCATION</p>
+         <p class="d-head"><i class="fa fa-fw fa-calendar w3-margin-right"></i>DATE AND TIME</p>
+           <p class="w3-margin-right"> Monday, 24 July 2017<br>11:00 AM</p>
+          <a href=""><i class="w3-margin-right"></i>Add to calender</a><br><br>
+          <p class="d-head"><i class="fa fa-fw fa-location-arrow w3-margin-right"></i>LOCATION</p>
             <p class="w3-margin-right">
               Manekshaw Auditorium<br> Khyber Lines<br> Delhi Cantonment<br> New Delhi, DL 110010</p>
             <a href=""><i class="w3-margin-right"></i>View on map</a><br><br>
@@ -71,17 +71,17 @@
       <br>
 
       <!-- Accordion -->
-      <div class="w3-card-2 w3-round">
-        <div class="w3-white">
+      <div class="w3-card-2 w3-round" style="margin-top:20px;">
+        <!-- <div class="w3-white"> -->
           <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Groups</button>
-
-          <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
-
-          <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> My Photos</button>
-          
+           </div>
+          <div class="w3-card-2 w3-round" style="margin-top:20px;">
+            <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
         </div>
-      </div>
-      <br>
+          <!-- <div class="w3-card-2 w3-round" style="margin-top:20px;">
+            <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> My Photos</button>
+          </div> -->
+
 
     <!-- End Left Column -->
     </div>
@@ -122,11 +122,11 @@
     <div class="w3-col m2">
       <div class="w3-card-2 w3-round w3-white w3-center">
         <div class="w3-container">
-          <p>Upcoming Events:</p>
-          <img src="/w3images/forest.jpg" alt="Forest" style="width:100%;">
-          <p><strong>Holiday</strong></p>
-          <p>Friday 15:00</p>
-          <p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
+          <p>MAP</p>
+          <img src="" alt="google map" style="width:100%;">
+          <!-- <p><strong>Holiday</strong></p> -->
+          <!-- <p>Friday 15:00</p> -->
+          <!-- <p><button class="w3-button w3-block w3-theme-l4">Info</button></p> -->
         </div>
       </div>
       <br>
@@ -134,14 +134,20 @@
       <div class="w3-card-2 w3-round w3-white w3-center">
         <div class="w3-container">
           <p>Share with friends</p>
-          <div class="w3-row w3-opacity">
+          <a href="" class="fa fa-facebook"></a>
+          <a href="" class="fa fa-twitter"></a>
+          <a href="" class="fa fa-google-plus"></a>
+          <a href="" class="fa fa-instagram"></a>
+          <a href="" class="fa fa-linkedin"></a>
+          <a href="" class="fa fa-youtube"></a>
+          <!-- <div class="w3-row w3-opacity">
             <div class="w3-half">
               <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
             </div>
             <div class="w3-half">
               <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
       <br>
@@ -184,9 +190,8 @@
         </button>
         <h3 class="modal-title" id="modalLabel">Sign Up</h3>
         <p>Already have an account?
-          <button type="button" class="btn btn-default" id="signin-trigger"> Sign In</button></p>
-        <!-- <p>Already have an account? <a href="#signin" data-target="#signin" data-toggle="modal" id="signin-trigger">Log In</a></p> -->
-      </div>
+          <button type="button" class="btn btn-default" id="signin-trigger"> Sign In</button>
+        </p>
       <div class="modal-body">
         <form method="POST" commandName="user" action="${pageContext.request.contextPath}/user/add">
           <div class="form-group">
