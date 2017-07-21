@@ -9,12 +9,11 @@
       color: #fff;
   }
   .header-links-active{
-      border-bottom: 3px solid;
+      text-decoration: underline;
+      color: #fff;
   }
   .ht-logo{
-    /*margin-top: 10px;*/
     margin-bottom: 10px;
-
   }
 .ht-logo:hover{
       box-shadow: 0 8px 16px 0 rgba(253,253,255,0.2);
@@ -42,7 +41,6 @@
 
   .event {
       border: 10px solid transparent;
-      /*margin-bottom: 25px;*/
       width: 80%;
       height: 80%;
       opacity: 0.9;
@@ -57,9 +55,6 @@
       width: 100%;
       margin: auto;
   }
-  /*.carousel-caption h3 {
-      color: #fff;
-  }*/
 h3, .row p{
   color: black;
   margin-top: 25px;
@@ -85,7 +80,6 @@ h3, .row p{
       margin-top: 15px;
       color: #555;
   }
-
   .btn {
       padding: 10px 20px;
       background-color: #333;
@@ -120,10 +114,6 @@ h3, .row p{
   .navbar-nav li a:hover {
       color: #fff !important;
   }
-  /*.navbar-nav li.active a {
-      color: #fff;
-      background-color: #29292c;
-  }*/
   .navbar-default .navbar-toggle {
       border-color: transparent;
   }
@@ -157,10 +147,6 @@ h3, .row p{
       background-color: #333;
       padding: 20px;
   }
-  /*footer p{
-    font-weight: 500;
-    text-align: left;
-  }*/
 .form-heading{
   color:#000;
   text-align: center;
@@ -168,8 +154,6 @@ h3, .row p{
   font-weight: 500;
   padding-top: 10px;
   padding-bottom: 10px;
-  /*text-decoration: underline;*/
-  /*letter-spacing: 2px;*/
   border: solid black 1px;
   border-radius: 5px;
   margin: auto;
@@ -178,6 +162,10 @@ h3, .row p{
   margin-top: 20px;
   background: #fff;
   font-family: sans-serif;
+}
+.d-head{
+  /*color: #a2a6ad;*/
+  color: #8e9196;
 }
   .create{
     width: 900px;
@@ -227,17 +215,14 @@ h3, .row p{
   .expand:hover{
     opacity: 1;
     text-decoration: none;
-    /*font-size: 25px !important;*/
     transform: scale(1.05,1.05);
     width: 50px;
     transition: .2s ease-out;
     color: #fff;
   }
-
   .right-align{
     text-align: right;
   }
-
 .all{
   padding: 8px 15px;
   border-radius: 5px;
@@ -263,7 +248,6 @@ h3, .row p{
         width:75%;
     }
   }
-
   @media only screen and (max-width: 768px){
       .btn , .all{
         padding:4px 9px;
@@ -271,7 +255,6 @@ h3, .row p{
         line-height: 1;
       }
       .header-links a{
-          width: 50%;
           text-align: right;
           margin: auto;
           margin-right: 0;
@@ -299,7 +282,6 @@ h3, .row p{
           /*width: 300%;*/
           margin: auto;
           /*text-align: center;*/
-
           /*transform: scale(4,4);*/
       }
       .create {
@@ -308,14 +290,12 @@ h3, .row p{
       .container.text-center{
         padding-left: 40px !important;
         margin-left: 10px !important;
-
       }
       .expand{
         transform: scale(0.7,0.7);
         margin: auto;
         opacity: 1;
       }
-
       .container , .create {
           width:75%;
       }

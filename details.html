@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<title>Ht events</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="design.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<body class="w3-theme-l5">
+
+  <nav class="navbar navbar-default navbar-fixed-top" role = "navigation">
+    <div class = "navbar-header">
+       <button type = "button" class = "navbar-toggle"
+          data-toggle = "collapse" data-target = "#example-navbar-collapse">
+          <span class = "sr-only">Toggle navigation</span>
+          <span class = "icon-bar"></span>
+          <span class = "icon-bar"></span>
+          <span class = "icon-bar"></span>
+       </button>
+
+       <a href="http://www.hindustantimes.com">
+         <img class="ht-logo" src="http://www.hindustantimes.com/images/app-images/ht/sm-logo-cm.png" height="45" width="45">
+       </a>
+       <a class="logo" href="home.html">events</a>
+    </div>
+   <div class = "collapse navbar-collapse" id = "example-navbar-collapse">
+        <ul class="header-links nav navbar-nav navbar-right">
+          <li><a href="list.html">  <span class="glyphicon glyphicon-search"></span> BROWSE EVENTS</a></li>
+          <li><a href="#signin" data-target="#signin" data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span> LOG IN</a></li>
+          <li><a href="#signup" data-target="#signup" data-toggle="modal"><span class="glyphicon glyphicon-user"></span> SIGN UP</a></li>
+          <li><a href="create.html"><span class="glyphicon glyphicon-edit"></span> CREATE EVENT</a></li>
+          <li><a href="http://www.hindustantimes.com/contact-us"><span class="fa fa-phone"></span> CONTACT US</a></li>
+        </ul>
+    </div>
+  </nav>
+
+
+<!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
+  <!-- The Grid -->
+  <div class="w3-row">
+    <!-- Left Column -->
+    <div class="w3-col m3">
+      <!-- Profile -->
+      <div class="w3-card-2 w3-round w3-white">
+        <div class="w3-container">
+         <!-- <h4 class="w3-center">My Profile</h4> -->
+         <p class="w3-center"><img src="img/home-1.jpg" style="margin-top:20px;height:300px;width:300px" alt="Avatar"></p>
+         <hr>
+
+         <p class="d-head"><i class="w3-margin-right"></i>DATE AND TIME</p>
+           <p class="w3-margin-right"> Monday, 24 July 2017<br>
+          <i class="fa-fw w3-margin-right w3-text-theme"></i> 11:00 AM</p><br><br>
+          <p class="d-head"><i class="w3-margin-right"></i>LOCATION</p>
+            <p class="w3-margin-right">
+              Manekshaw Auditorium<br> Khyber Lines<br> Delhi Cantonment<br> New Delhi, DL 110010</p>
+            <a href=""><i class="w3-margin-right"></i>View on map</a><br><br>
+
+        </div>
+      </div>
+      <br>
+
+      <!-- Accordion -->
+      <div class="w3-card-2 w3-round">
+        <div class="w3-white">
+          <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Groups</button>
+
+          <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
+
+          <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> My Photos</button>
+          
+        </div>
+      </div>
+      <br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Middle Column -->
+    <div class="w3-col m7">
+
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card-2 w3-round w3-white">
+            <div class="w3-container w3-padding">
+              <h2>EVENT</h2>
+              <hr class="w3-clear">
+              <h4>Description</h4>
+              <!-- <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom"> -->
+              <p>This is an event. A really fun event. It'll be a nice event. All the fun people will attend this event. You should come too. It'll be really fun. We'll be glad to have you. You will have an amazing time. See you there.
+              This is an event. A really fun event. It'll be a nice event. All the fun people will attend this event. You should come too. It'll be really fun. We'll be glad to have you. You will have an amazing time. See you there.<br><br>
+              This is an event. A really fun event. It'll be a nice event. All the fun people will attend this event. You should come too. It'll be really fun. We'll be glad to have you. You will have an amazing time. See you there.<br>
+              This is an event. A really fun event. It'll be a nice event. All the fun people will attend this event. You should come too. It'll be really fun. We'll be glad to have you. You will have an amazing time. See you there.<br><br>
+              This is an event. A really fun event. It'll be a nice event. All the fun people will attend this event. You should come too. It'll be really fun. We'll be glad to have you. You will have an amazing time. See you there.<br><br>
+              This is an event. A really fun event. It'll be a nice event. All the fun people will attend this event. You should come too. It'll be really fun. We'll be glad to have you. You will have an amazing time. See you there.
+              This is an event. A really fun event. It'll be a nice event. All the fun people will attend this event. You should come too. It'll be really fun. We'll be glad to have you. You will have an amazing time. See you there.<br><br>
+              This is an event. A really fun event. It'll be a nice event. All the fun people will attend this event. You should come too. It'll be really fun. We'll be glad to have you. You will have an amazing time. See you there.
+              This is an event. A really fun event. It'll be a nice event. All the fun people will attend this event. You should come too. It'll be really fun. We'll be glad to have you. You will have an amazing time. See you there.<br><br>
+              This is an event. A really fun event. It'll be a nice event. All the fun people will attend this event. You should come too. It'll be really fun. We'll be glad to have you. You will have an amazing time. See you there.
+              </p>
+              <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  REGISTER</button>
+              <!-- <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- End Middle Column -->
+    </div>
+
+    <!-- Right Column location-->
+    <div class="w3-col m2">
+      <div class="w3-card-2 w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Upcoming Events:</p>
+          <img src="/w3images/forest.jpg" alt="Forest" style="width:100%;">
+          <p><strong>Holiday</strong></p>
+          <p>Friday 15:00</p>
+          <p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
+        </div>
+      </div>
+      <br>
+
+      <div class="w3-card-2 w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Share with friends</p>
+          <div class="w3-row w3-opacity">
+            <div class="w3-half">
+              <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
+            </div>
+            <div class="w3-half">
+              <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+</div>
+<br>
+
+<footer>
+  <div class="text-center">
+    <a class="up-arrow" href="#top" data-toggle="tooltip" title="TO TOP">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+  </div>
+  <div class="follow">
+    Follow Us:
+    <a href="https://www.facebook.com/hindustantimes" class="fa fa-facebook expand"></a>
+    <a href="https://twitter.com/htTweets" class="fa fa-twitter expand"></a>
+    <a href="https://plus.google.com/+hindustantimes/posts" class="fa fa-google-plus expand"></a>
+    <a href="https://www.instagram.com/hindustantimes/" class="fa fa-instagram expand"></a>
+    <a href="https://www.linkedin.com/company/hindustantimes" class="fa fa-linkedin expand"></a>
+    <a href="https://www.youtube.com/user/ht" class="fa fa-youtube expand"></a>
+</div>
+<div class="copyright">Copyright &copy 2017. HT Media Limited. All rights reserved.</div>
+<div class="footer-links right-align">
+  <a href="http://www.htmedia.in/Sectionb14c.html?Page=Page-HTMedia-AboutUs">About Us</a>
+  <a href="http://www.hindustantimes.com/contact-us">Contact Us</a>
+  <a href="http://www.hindustantimes.com/privacy-policy">Privacy Policy</a>
+  <a href="http://www.hindustantimes.com/disclaimer">Disclaimer</a>
+  <a href="http://www.shine.com/">Jobs</a>
+</div>
+</footer>
+
+<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h3 class="modal-title" id="modalLabel">Sign Up</h3>
+        <p>Already have an account?
+          <button type="button" class="btn btn-default" id="signin-trigger"> Sign In</button></p>
+        <!-- <p>Already have an account? <a href="#signin" data-target="#signin" data-toggle="modal" id="signin-trigger">Log In</a></p> -->
+      </div>
+      <div class="modal-body">
+        <form method="POST" commandName="user" action="${pageContext.request.contextPath}/user/add">
+          <div class="form-group">
+            <label for="name" class="form-control-label">Name <span class="fa fa-user-o"></span></label>
+            <input type="text" class="form-control" name="name" id="name">
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-control-label">Email <span class="fa fa-envelope-o"></span></label>
+            <input type="text" class="form-control" name="email" id="email"></input>
+          </div>
+          <div class="form-group">
+            <label for="pw" class="form-control-label">Password <span class="glyphicon glyphicon-lock"></span></label>
+            <input type="password" class="form-control" name="pw" id="pw"></input>
+          </div>
+        </form>
+        <div class="form-group">
+          <label for="phone" class="form-control-label">Phone <span class="fa fa-phone"></span></label>
+          <input type="text" class="form-control" name="phone" id="phone"></input>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <input type="submit" class="btn btn-primary" value="Sign Up"></input>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <p>By signing up, I agree to terms of service & privacy policy.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h3 class="modal-title" id="modalLabel">Sign In</h3>
+        <p>Not a member?
+          <button type="button" class="btn btn-default" id="signup-trigger">Sign Up</button>
+        <!-- <p>New User? <a href="#signup" data-target="#signup" data-toggle="modal" id="signup-trigger">Sign Up</a></p> -->
+      </div>
+      <div class="modal-body">
+        <form method="POST" commandName="user" action="">
+          <div class="form-group">
+            <label for="email" class="form-control-label">Email <span class="fa fa-envelope-o"></span></label>
+            <input type="text" class="form-control" name="email" id="email"></input>
+          </div>
+          <div class="form-group">
+            <label for="pw" class="form-control-label">Password <span class="glyphicon glyphicon-lock"></span></label>
+            <input type="password" class="form-control" name="pw" id="pw"></input>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <input type="submit" class="btn btn-primary" value="Sign In"></input>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+// Accordion
+// function myFunction(id) {
+//     var x = document.getElementById(id);
+//     if (x.className.indexOf("w3-show") == -1) {
+//         x.className += " w3-show";
+//         x.previousElementSibling.className += " w3-theme-d1";
+//     } else {
+//         x.className = x.className.replace("w3-show", "");
+//         x.previousElementSibling.className =
+//         x.previousElementSibling.className.replace(" w3-theme-d1", "");
+//     }
+// }
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+$("#signup-trigger").click(function(){
+  $('#signin').modal('hide');
+  $('#signup').modal('show');
+});
+
+$("#signin-trigger").click(function(){
+  $('#signup').modal('hide');
+  $('#signin').modal('show');
+});
+</script>
+
+</body>
+</html>
