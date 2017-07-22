@@ -267,12 +267,13 @@ h3, .row p{
 .pagination a:hover:not(.active) {background-color: #ddd;}
 
 .share{
-  color: #000;
+  color: #272728;
   padding: 4px 4px 4px 4px;
 
 }
 .sh{
   font-size: 20px;
+
 }
 .share:hover{
   text-decoration: none;
@@ -351,6 +352,9 @@ h3, .row p{
       .form-heading{
         width:50%;
         font-size: 26px;
+      }
+      .w3-col{
+        margin-top: 20px;
       }
       /*.text-center{
         display: block;
