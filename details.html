@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html><head>
 <title>Ht events</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+</head>
 <body class="w3-theme-l5">
 
   <nav class="navbar navbar-default navbar-fixed-top" role = "navigation">
@@ -57,11 +57,10 @@
          <!-- <h4 class="w3-center">My Profile</h4> -->
          <p class="w3-center"><img src="img/home-1.jpg" style="margin-top:20px;height:300px;width:300px" alt="Avatar"></p>
          <hr>
-
-         <p class="d-head"><i class="fa fa-fw fa-calendar w3-margin-right"></i>DATE AND TIME</p>
+         <p class="left-header"><i class="fa fa-fw fa-calendar w3-margin-right"></i>DATE AND TIME</p>
            <p class="w3-margin-right"> Monday, 24 July 2017<br>11:00 AM</p>
           <a href=""><i class="w3-margin-right"></i>Add to calender</a><br><br>
-          <p class="d-head"><i class="fa fa-fw fa-location-arrow w3-margin-right"></i>LOCATION</p>
+          <p class="left-header"><i class="fa fa-fw fa-map-marker w3-margin-right"></i>LOCATION</p>
             <p class="w3-margin-right">
               Manekshaw Auditorium<br> Khyber Lines<br> Delhi Cantonment<br> New Delhi, DL 110010</p>
             <a href=""><i class="w3-margin-right"></i>View on map</a><br><br>
@@ -78,21 +77,16 @@
           <div class="w3-card-2 w3-round" style="margin-top:20px;">
             <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
         </div>
-          <!-- <div class="w3-card-2 w3-round" style="margin-top:20px;">
-            <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> My Photos</button>
-          </div> -->
-
-
     <!-- End Left Column -->
     </div>
 
     <!-- Middle Column -->
     <div class="w3-col m7">
-
       <div class="w3-row-padding">
         <div class="w3-col m12">
           <div class="w3-card-2 w3-round w3-white">
-            <div class="w3-container w3-padding">
+            <div class="w3-container w3-padding"><span class="bs-align right-align"><a class="fa fa-bookmark-o" data-toggle="tooltip" data-placement="bottom" title="Bookmark"></a>
+              <a class="fa fa-share-alt" data-toggle="tooltip" data-placement="bottom" title="Share"></a></span>
               <h2>EVENT</h2>
               <hr class="w3-clear">
               <h4>Description</h4>
@@ -108,6 +102,8 @@
               This is an event. A really fun event. It'll be a nice event. All the fun people will attend this event. You should come too. It'll be really fun. We'll be glad to have you. You will have an amazing time. See you there.<br><br>
               This is an event. A really fun event. It'll be a nice event. All the fun people will attend this event. You should come too. It'll be really fun. We'll be glad to have you. You will have an amazing time. See you there.
               </p>
+              <h4>Tickets</h4>
+              <h4>Category</h4>
               <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  REGISTER</button>
               <!-- <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> -->
             </div>
@@ -286,6 +282,32 @@ $("#signup-trigger").click(function(){
 $("#signin-trigger").click(function(){
   $('#signup').modal('hide');
   $('#signin').modal('show');
+});
+
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+
+$(document).ready(function(){
+$(".up-arrow").on('click', function(event) {
+
+  // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+   $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 600, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+  } // End if
+});
 });
 </script>
 

@@ -8,6 +8,18 @@
       font-size: 20px;
       color: #fff;
   }
+  .bs-align{
+    font-size: 26px;
+    color: #2d8bb7;
+float: right;
+  }
+  .bs-align a{
+    padding: 2px;
+  }
+  .bs-align a:hover{
+    text-decoration: none;
+    cursor: pointer;
+  }
   .header-links-active{
       text-decoration: underline;
       color: #fff;
@@ -163,8 +175,7 @@ h3, .row p{
   background: #fff;
   font-family: sans-serif;
 }
-.d-head{
-  /*color: #a2a6ad;*/
+.left-header{
   color: #8e9196;
 }
   .create{
