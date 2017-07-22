@@ -72,10 +72,12 @@
       <!-- Accordion -->
       <div class="w3-card-2 w3-round" style="margin-top:20px;">
         <!-- <div class="w3-white"> -->
-          <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Groups</button>
+          <button onclick="" class="w3-button w3-block w3-theme-l1 w3-left-align">
+            <i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Groups</button>
            </div>
           <div class="w3-card-2 w3-round" style="margin-top:20px;">
-            <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
+            <button onclick="" class="w3-button w3-block w3-theme-l1 w3-left-align">
+              <i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
         </div>
     <!-- End Left Column -->
     </div>
@@ -118,8 +120,10 @@
     <div class="w3-col m2">
       <div class="w3-card-2 w3-round w3-white w3-center">
         <div class="w3-container">
+
+          <div class="map" id="map" style="width:190px;height:190px;"></div>
           <p>MAP</p>
-          <img src="" alt="google map" style="width:100%;">
+          <!-- <img src="" alt="google map" style="width:100%;"> -->
           <!-- <p><strong>Holiday</strong></p> -->
           <!-- <p>Friday 15:00</p> -->
           <!-- <p><button class="w3-button w3-block w3-theme-l4">Info</button></p> -->
@@ -130,20 +134,14 @@
       <div class="w3-card-2 w3-round w3-white w3-center">
         <div class="w3-container">
           <p>Share with friends</p>
-          <a href="" class="fa fa-facebook"></a>
-          <a href="" class="fa fa-twitter"></a>
-          <a href="" class="fa fa-google-plus"></a>
-          <a href="" class="fa fa-instagram"></a>
-          <a href="" class="fa fa-linkedin"></a>
-          <a href="" class="fa fa-youtube"></a>
-          <!-- <div class="w3-row w3-opacity">
-            <div class="w3-half">
-              <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
-            </div>
-            <div class="w3-half">
-              <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
-            </div>
-          </div> -->
+          <div class="sh">
+            <a href="" class="fa fa-facebook share"></a>
+            <a href="" class="fa fa-twitter share"></a>
+            <a href="" class="fa fa-google-plus share"></a>
+            <a href="" class="fa fa-instagram share"></a>
+            <a href="" class="fa fa-linkedin share"></a>
+            <a href="" class="fa fa-youtube share"></a>
+          </div>
         </div>
       </div>
       <br>
@@ -290,26 +288,29 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 $(".up-arrow").on('click', function(event) {
-
-  // Make sure this.hash has a value before overriding default behavior
   if (this.hash !== "") {
     // Prevent default anchor click behavior
     event.preventDefault();
-
-    // Store hash
     var hash = this.hash;
-
    $('html, body').animate({
       scrollTop: $(hash).offset().top
     }, 600, function(){
-
       // Add hash (#) to URL when done scrolling (default click behavior)
       window.location.hash = hash;
     });
-  } // End if
+  }
 });
 });
+
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
 </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB8O9iXUkHDvWsPnJ8AM-GJ5KcIobOMxU&callback=myMap"></script>
 
 </body>
 </html>
