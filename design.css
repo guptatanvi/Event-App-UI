@@ -246,6 +246,26 @@ h3, .row p{
     transition: .2s;
 }
 
+.pagination{
+  margin-left: 40%;
+}
+.pagination a {
+    color: black;
+    float: left;
+    padding: 6px 12px;
+    text-decoration: none;
+    transition: background-color .3s;
+    font-size: 14px;
+
+}
+
+.pagination a.active {
+    background-color: #2d8bb7;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
 
   @media (max-width: 600px) {
     .carousel-caption {
@@ -264,6 +284,9 @@ h3, .row p{
         padding:4px 9px;
         font-size:80%;
         line-height: 1;
+      }
+      .pagination{
+        margin: auto;
       }
       .header-links a{
           text-align: right;
