@@ -1,315 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>HT Events</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="design.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <title>HT Events</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <!-- <link rel="stylesheet" href="design.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+<style>
+
+.search {
+  width: 100%;
+  position: relative
+}
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 3px solid #00B4CC;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  position: absolute;
+  right: -50px;
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+</style>
 </head>
-<body id="top" data-spy="scroll" data-target=".navbar" data-offset="50">
-
-
-<nav class="navbar navbar-default navbar-fixed-top" role = "navigation">
-  <div class = "navbar-header">
-     <button type = "button" class = "navbar-toggle"
-        data-toggle = "collapse" data-target = "#example-navbar-collapse">
-        <span class = "sr-only">Toggle navigation</span>
-        <span class = "icon-bar"></span>
-        <span class = "icon-bar"></span>
-        <span class = "icon-bar"></span>
+<body>
+  <div class="wrap">
+   <div class="search">
+      <input type="text" class="searchTerm" placeholder="Search">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
      </button>
-
-     <a href="http://www.hindustantimes.com">
-       <img class="ht-logo" src="http://www.hindustantimes.com/images/app-images/ht/sm-logo-cm.png" height="45" width="45">
-     </a>
-     <a class="logo" href="home.html">events</a>
-  </div>
- <div class = "collapse navbar-collapse" id = "example-navbar-collapse">
-      <ul class="header-links nav navbar-nav navbar-right">
-        <li><a href="list.html">  <span class="glyphicon glyphicon-search"></span> BROWSE EVENTS</a></li>
-        <li><a href="#signin" data-target="#signin" data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span> LOG IN</a></li>
-        <li><a href="#signup" data-target="#signup" data-toggle="modal"><span class="glyphicon glyphicon-user"></span> SIGN UP</a></li>
-        <li><a href="create.html"><span class="glyphicon glyphicon-edit"></span> CREATE EVENT</a></li>
-        <li><a href="http://www.hindustantimes.com/contact-us"><span class="fa fa-phone"></span> CONTACT US</a></li>
-      </ul>
-         </div>
-</nav>
-
-
-
-<div class="container">
-  <div class="container text-center">
-    <h3>MOST POPULAR</h3>
-    <div class="row text-center">
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="img/home-2.jpg" alt="Sports" width="400" height="300">
-          <p><strong>EVENT 1</strong></p>
-          <p>Friday. 15 July, 2015</p>
-          <button class="btn" data-toggle="modal" data-target="list.html">More</button>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="img/home-2.jpg" alt="Art" width="400" height="300">
-          <p><strong>EVENT 1</strong></p>
-          <p>Friday. 15 July, 2015</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">More</button>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="img/home-2.jpg" alt="Music" width="400" height="300">
-          <p><strong>EVENT 1</strong></p>
-          <p>Friday. 15 July, 2015</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">More</button>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="img/home-2.jpg" alt="Dance" width="400" height="300">
-          <p><strong>EVENT 1</strong></p>
-          <p>Friday. 15 July, 2015</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">More</button>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="img/home-2.jpg" alt="Theatre" width="400" height="300">
-          <p><strong>EVENT 1</strong></p>
-          <p>Friday. 15 July, 2015</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">More</button>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="img/home-2.jpg" alt="Food & Drinks" width="400" height="300">
-          <p><strong>EVENT 1</strong></p>
-          <p>Friday. 15 July, 2015</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">More</button>
-        </div>
-      </div>
-    </div>
-
-      <button class="all" data-target="list.html">See All</button>
-  </div>
-
-  <!-- <div class="bg-1"> -->
-    <div class="container text-center">
-      <h3>TOP CATEGORIES</h3>
-      <div class="row">
-        <div class="col-sm-4">
-          <a href="" data-toggle="collapse">
-          <p class="text-center"><strong>MUSIC</strong></p>
-
-            <img src="img/home-2.jpg" class="img-circle event" alt="Sports Events" width="255" height="255">
-          </a>
-        </div>
-        <div class="col-sm-4">
-          <a href="" data-toggle="collapse">
-          <p class="text-center"><strong>ART</strong></p>
-
-            <img src="img/home-2.jpg" class="img-circle event" alt="Food & Drinks Evnts" width="255" height="255">
-          </a>
-        </div>
-        <div class="col-sm-4">
-          <a href="#demo3" data-toggle="collapse">
-          <p class="text-center"><strong>THEATRE</strong></p>
-
-            <img src="img/home-2.jpg" class="img-circle event" alt="Art Events" width="255" height="255">
-          </a>
-        </div>
-      </div>
-
-        <div class="row">
-          <div class="col-sm-4">
-            <a href="" data-toggle="collapse">
-            <p class="text-center"><strong>DANCE</strong></p>
-
-              <img src="img/home-2.jpg" class="img-circle event" alt="Sports Events" width="255" height="255">
-            </a>
-          </div>
-          <div class="col-sm-4">
-            <a href="" data-toggle="collapse">
-            <p class="text-center"><strong>FOOD & DRINK</strong></p>
-
-              <img src="img/home-2.jpg" class="img-circle event" alt="Food & Drinks Evnts" width="255" height="255">
-            </a>
-          </div>
-          <div class="col-sm-4">
-              <a href="" data-toggle="collapse">
-            <p class="text-center"><strong>BUSINESS</strong></p>
-
-              <img src="img/home-2.jpg" class="img-circle event" alt="Art Events" width="255" height="255">
-            </a>
-          </div>
-        </div>
-  </div>
-  <div class="container text-center">
-    <h3>MOST POPULAR</h3>
-    <div class="row text-center">
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="img/home-2.jpg" alt="Sports" width="400" height="300">
-          <p><strong>EVENT 1</strong></p>
-          <p>Friday. 15 July, 2015</p>
-          <button class="btn" data-toggle="modal" data-target="list.html">More</button>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="img/home-2.jpg" alt="Art" width="400" height="300">
-          <p><strong>EVENT 1</strong></p>
-          <p>Friday. 15 July, 2015</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">More</button>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="img/home-2.jpg" alt="Music" width="400" height="300">
-          <p><strong>EVENT 1</strong></p>
-          <p>Friday. 15 July, 2015</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">More</button>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="img/home-2.jpg" alt="Dance" width="400" height="300">
-          <p><strong>EVENT 1</strong></p>
-          <p>Friday. 15 July, 2015</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">More</button>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="img/home-2.jpg" alt="Theatre" width="400" height="300">
-          <p><strong>EVENT 1</strong></p>
-          <p>Friday. 15 July, 2015</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">More</button>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="img/home-2.jpg" alt="Food & Drinks" width="400" height="300">
-          <p><strong>EVENT 1</strong></p>
-          <p>Friday. 15 July, 2015</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">More</button>
-        </div>
-      </div>
-    </div>
-
-      <button class="all" data-target="list.html">See All</button>
-  </div>
-
-  <!-- <div class="bg-1"> -->
-    <div class="container text-center">
-      <h3>TOP CATEGORIES</h3>
-      <div class="row">
-        <div class="col-sm-4">
-          <a href="" data-toggle="collapse">
-          <p class="text-center"><strong>MUSIC</strong></p>
-
-            <img src="img/home-2.jpg" class="img-circle event" alt="Sports Events" width="255" height="255">
-          </a>
-        </div>
-        <div class="col-sm-4">
-          <a href="" data-toggle="collapse">
-          <p class="text-center"><strong>ART</strong></p>
-
-            <img src="img/home-2.jpg" class="img-circle event" alt="Food & Drinks Evnts" width="255" height="255">
-          </a>
-        </div>
-        <div class="col-sm-4">
-          <a href="#demo3" data-toggle="collapse">
-          <p class="text-center"><strong>THEATRE</strong></p>
-
-            <img src="img/home-2.jpg" class="img-circle event" alt="Art Events" width="255" height="255">
-          </a>
-        </div>
-      </div>
-
-        <div class="row">
-          <div class="col-sm-4">
-            <a href="" data-toggle="collapse">
-            <p class="text-center"><strong>DANCE</strong></p>
-
-              <img src="img/home-2.jpg" class="img-circle event" alt="Sports Events" width="255" height="255">
-            </a>
-          </div>
-          <div class="col-sm-4">
-            <a href="" data-toggle="collapse">
-            <p class="text-center"><strong>FOOD & DRINK</strong></p>
-
-              <img src="img/home-2.jpg" class="img-circle event" alt="Food & Drinks Evnts" width="255" height="255">
-            </a>
-          </div>
-          <div class="col-sm-4">
-              <a href="" data-toggle="collapse">
-            <p class="text-center"><strong>BUSINESS</strong></p>
-
-              <img src="img/home-2.jpg" class="img-circle event" alt="Art Events" width="255" height="255">
-            </a>
-          </div>
-        </div>
-  </div>
+   </div>
 </div>
-
-<footer>
-  <div class="text-center">
-    <a class="up-arrow" href="#top" data-toggle="tooltip" title="TO TOP">
-      <span class="glyphicon glyphicon-chevron-up"></span>
-    </a>
-  </div>
-  <div class="follow">
-    Follow Us:
-    <a href="https://www.facebook.com/hindustantimes" class="fa fa-facebook expand"></a>
-    <a href="https://twitter.com/htTweets" class="fa fa-twitter expand"></a>
-    <a href="https://plus.google.com/+hindustantimes/posts" class="fa fa-google-plus expand"></a>
-    <a href="https://www.instagram.com/hindustantimes/" class="fa fa-instagram expand"></a>
-    <a href="https://www.linkedin.com/company/hindustantimes" class="fa fa-linkedin expand"></a>
-    <a href="https://www.youtube.com/user/ht" class="fa fa-youtube expand"></a>
-</div>
-<div class="copyright">Copyright &copy 2017. HT Media Limited. All rights reserved.</div>
-<div class="footer-links right-align">
-  <a href="http://www.htmedia.in/Sectionb14c.html?Page=Page-HTMedia-AboutUs">About Us</a>
-  <a href="http://www.hindustantimes.com/contact-us">Contact Us</a>
-  <a href="http://www.hindustantimes.com/privacy-policy">Privacy Policy</a>
-  <a href="http://www.hindustantimes.com/disclaimer">Disclaimer</a>
-  <a href="http://www.shine.com/">Jobs</a>
-</div>
-</footer>
-
-<script type="text/javascript">
-$(document).ready(function(){
-$(".up-arrow").on('click', function(event) {
-
-  // Make sure this.hash has a value before overriding default behavior
-  if (this.hash !== "") {
-    // Prevent default anchor click behavior
-    event.preventDefault();
-
-    // Store hash
-    var hash = this.hash;
-
-   $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 800, function(){
-
-      // Add hash (#) to URL when done scrolling (default click behavior)
-      window.location.hash = hash;
-    });
-  } // End if
-});
-});
-</script>
-
 </body>
 </html>
