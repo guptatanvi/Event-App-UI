@@ -170,7 +170,7 @@ h3, .row p{
 
     .searchTerm {
       /*float: left;*/
-      width: 31%;
+      width: 80%;
       border: 2px solid #00B4CC;
       padding: 5px;
       height: 36px;
@@ -194,7 +194,8 @@ h3, .row p{
       /*padding-left: 0;*/
       /*float: right;*/
       /*right: -50px;*/
-      width: 40px;
+      /*width: 40px;*/
+      width: 15%;
       height: 36px;
       border: 1px solid #00B4CC;
       background: #00B4CC;
@@ -417,6 +418,10 @@ h3, .row p{
       }
       .container , .create {
           width:75%;
+          margin: auto;
+          margin-top: 110px;
+          margin-left: 0;
+          text-align: center;
       }
       .form-heading{
         width:50%;
@@ -429,4 +434,20 @@ h3, .row p{
         display: block;
         text-align: center;
       }*/
+      .searchTerm{
+        float: left;
+        margin: auto;
+        margin-top: 2px;
+        width: 85%;
+
+      }
+        .searchButton{
+          float: right;
+          width: 15%;
+        }
+      .pagination{
+        /*text-align: center;*/
+        /*float: right;*/
+        margin-left: 30%;
+      }
   }
